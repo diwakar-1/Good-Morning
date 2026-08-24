@@ -1,138 +1,1746 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Good Morning ❤️</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#f6a04d">
+    <title>Good Morning Sunshine ☀️ | For My One & Only Love</title>
 
-<style>
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    overflow:hidden;
-}
+    <!-- Google Fonts: Warm Sunshine & Romantic Pairings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
 
-.card{
-    background:white;
-    width:90%;
-    max-width:500px;
-    padding:35px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 20px 50px rgba(0,0,0,.2);
-    animation:fadeIn 1.5s;
-}
+    <style>
+        :root {
+            /* Warm Sunshine & Morning Dawn Palette */
+            --sun-gold: #ff9e00;
+            --sun-amber: #ff6b35;
+            --sun-coral: #ff4d6d;
+            --sun-warm-deep: #b33939;
+            --morning-gold-glow: rgba(255, 170, 0, 0.45);
+            --sun-glow: rgba(255, 107, 53, 0.35);
+            --sky-morning-1: #ffedd5;
+            --sky-morning-2: #fed7aa;
+            --glass-bg: rgba(255, 253, 247, 0.82);
+            --glass-border: rgba(255, 255, 255, 0.9);
+            --glass-shadow: rgba(245, 130, 32, 0.16);
+            --text-main: #331d0e;
+            --text-muted: #6b4d3c;
+            --card-radius: 28px;
+        }
 
-h1{
-    color:#ff4d6d;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
 
-p{
-    line-height:1.6;
-    color:#555;
-}
+        body {
+            min-height: 100vh;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-main);
+            background: linear-gradient(145deg, #ffe5b4 0%, #ffcf96 25%, #ffb4a2 60%, #ffd6a5 100%);
+            background-attachment: fixed;
+            overflow-x: hidden;
+            position: relative;
+        }
 
-button{
-    margin-top:20px;
-    padding:12px 25px;
-    border:none;
-    border-radius:30px;
-    background:#ff4d6d;
-    color:white;
-    cursor:pointer;
-    font-size:16px;
-}
+        /* Morning Sunbeams & Sky Glow Background */
+        .sunshine-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
 
-button:hover{
-    background:#ff2e5f;
-}
+        /* Radiant Sun in top corner */
+        .sun-radiance {
+            position: absolute;
+            top: -120px;
+            right: -120px;
+            width: 480px;
+            height: 480px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 223, 100, 0.9) 0%, rgba(255, 158, 0, 0.6) 40%, rgba(255, 107, 53, 0.2) 70%, transparent 100%);
+            filter: blur(40px);
+            animation: sunPulse 8s ease-in-out infinite alternate;
+        }
 
-#secret{
-    display:none;
-    margin-top:20px;
-    color:#ff4d6d;
-    font-size:20px;
-    font-weight:bold;
-}
+        /* Morning Sky Ambient Orbs */
+        .ambient-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(75px);
+            opacity: 0.55;
+            animation: floatOrb 12s ease-in-out infinite alternate;
+        }
 
-.heart{
-    position:absolute;
-    color:white;
-    animation:float 8s linear infinite;
-}
+        .orb-1 {
+            width: 420px;
+            height: 420px;
+            background: #ffb703;
+            top: 15%;
+            left: -140px;
+        }
 
-@keyframes float{
-    from{
-        transform:translateY(100vh);
-        opacity:1;
-    }
-    to{
-        transform:translateY(-100px);
-        opacity:0;
-    }
-}
+        .orb-2 {
+            width: 460px;
+            height: 460px;
+            background: #fb8500;
+            bottom: -100px;
+            right: -100px;
+            animation-delay: -4s;
+        }
 
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-</style>
+        .orb-3 {
+            width: 320px;
+            height: 320px;
+            background: #ffd166;
+            top: 55%;
+            left: 45%;
+            opacity: 0.38;
+            animation-delay: -8s;
+        }
+
+        @keyframes sunPulse {
+            0% { transform: scale(1) rotate(0deg); opacity: 0.85; }
+            100% { transform: scale(1.15) rotate(15deg); opacity: 1; }
+        }
+
+        @keyframes floatOrb {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(50px, 40px) scale(1.12); }
+        }
+
+        /* Particle Canvas for Sunbeams, Sparkles & Golden Hearts */
+        #particle-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Layout Container */
+        .container {
+            position: relative;
+            z-index: 2;
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 24px 16px 85px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        /* Top Header Control Bar */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-radius: 40px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 10px 30px var(--glass-shadow);
+        }
+
+        .brand-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Caveat', cursive;
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: var(--sun-amber);
+            text-shadow: 0 2px 8px rgba(255, 107, 53, 0.2);
+        }
+
+        .music-toggle-btn {
+            background: linear-gradient(135deg, #ff9e00 0%, #ff6b35 100%);
+            color: #ffffff;
+            border: none;
+            padding: 9px 18px;
+            border-radius: 30px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .music-toggle-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.55);
+        }
+
+        /* Hero Sunshine Morning Card */
+        .hero-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1.5px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 44px 28px;
+            text-align: center;
+            box-shadow: 0 24px 60px var(--glass-shadow);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInSlide 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        /* Golden Sunrise Top Accent Bar */
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ffbe0b, #fb5607, #ff006e, #ffbe0b);
+            background-size: 300% 100%;
+            animation: sunBeamFlow 7s linear infinite;
+        }
+
+        @keyframes sunBeamFlow {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 300% 0%; }
+        }
+
+        .morning-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 158, 0, 0.15);
+            color: #d9480f;
+            padding: 7px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+            border: 1px solid rgba(255, 158, 0, 0.35);
+        }
+
+        .hero-title {
+            font-family: 'Fraunces', serif;
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1.12;
+            background: linear-gradient(135deg, #b33939 0%, #ff6b35 50%, #ff9e00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+
+        .hero-script {
+            font-family: 'Caveat', cursive;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--sun-amber);
+            display: block;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 12px rgba(255, 107, 53, 0.25);
+        }
+
+        .hero-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            margin: 16px 0 26px 0;
+            color: var(--sun-amber);
+            font-size: 1.2rem;
+            opacity: 0.85;
+        }
+
+        .hero-divider::before, .hero-divider::after {
+            content: '';
+            width: 70px;
+            height: 1.5px;
+            background: linear-gradient(90deg, transparent, var(--sun-amber), transparent);
+        }
+
+        /* Love Letter Parchment */
+        .love-letter-box {
+            background: rgba(255, 255, 255, 0.72);
+            border-radius: 22px;
+            padding: 28px 24px;
+            border: 1.5px dashed rgba(255, 158, 0, 0.45);
+            position: relative;
+            text-align: left;
+            margin-bottom: 26px;
+            box-shadow: inset 0 2px 10px rgba(255, 170, 0, 0.06);
+        }
+
+        .love-letter-box p {
+            font-size: 1.14rem;
+            line-height: 1.85;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .highlight-quote {
+            display: block;
+            font-family: 'Fraunces', serif;
+            font-style: italic;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #a71d2a;
+            text-align: center;
+            margin: 20px 0;
+            padding: 14px 18px;
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.12), rgba(255, 107, 53, 0.12));
+            border-radius: 14px;
+            border-left: 5px solid var(--sun-amber);
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.08);
+        }
+
+        /* Interactive Action Buttons */
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 12px;
+        }
+
+        .btn-sunshine {
+            background: linear-gradient(135deg, #ff9e00 0%, #ff5400 100%);
+            color: #ffffff;
+            border: none;
+            padding: 15px 32px;
+            border-radius: 50px;
+            font-size: 1.08rem;
+            font-weight: 700;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            cursor: pointer;
+            box-shadow: 0 12px 28px rgba(255, 107, 53, 0.45);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .btn-sunshine:hover, .btn-sunshine:active {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 16px 36px rgba(255, 107, 53, 0.6);
+        }
+
+        .btn-secondary-morning {
+            background: #ffffff;
+            color: #d9480f;
+            border: 2px solid #ff9e00;
+            padding: 14px 26px;
+            border-radius: 50px;
+            font-size: 1.02rem;
+            font-weight: 700;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 6px 18px rgba(255, 158, 0, 0.18);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary-morning:hover {
+            background: #fff8eb;
+            transform: translateY(-2px);
+            border-color: #ff6b35;
+        }
+
+        /* Surprise Reveal Section */
+        .secret-reveal-card {
+            display: none;
+            margin-top: 26px;
+            background: linear-gradient(135deg, #fff9f0 0%, #fff0e6 100%);
+            border: 2px solid #ff9e00;
+            border-radius: 24px;
+            padding: 28px 24px;
+            text-align: center;
+            animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            box-shadow: 0 18px 45px rgba(255, 107, 53, 0.28);
+        }
+
+        .secret-text {
+            font-size: 1.22rem;
+            font-weight: 600;
+            color: #7f1d1d;
+            line-height: 1.75;
+            margin-bottom: 14px;
+        }
+
+        .secret-grand {
+            font-family: 'Caveat', cursive;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #e63946;
+            margin-top: 12px;
+            display: block;
+            text-shadow: 0 4px 15px rgba(230, 57, 70, 0.35);
+        }
+
+        /* SECTION: Video Edits Gallery */
+        .edits-section {
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 22px;
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            color: #d9480f;
+            padding: 7px 18px;
+            border-radius: 30px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+            margin-bottom: 10px;
+            border: 1px solid rgba(255, 158, 0, 0.3);
+        }
+
+        .section-title {
+            font-family: 'Fraunces', serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #3b1908;
+        }
+
+        .section-subtitle {
+            font-size: 1.02rem;
+            color: var(--text-muted);
+            max-width: 520px;
+            margin: 8px auto 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Sunshine Story Reels Grid */
+        .edits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            margin-top: 18px;
+        }
+
+        .edit-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-radius: 26px;
+            border: 1.5px solid var(--glass-border);
+            overflow: hidden;
+            box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+            transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .edit-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 22px 50px rgba(255, 107, 53, 0.35);
+            border-color: rgba(255, 158, 0, 0.7);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 9 / 14;
+            background: #140d08;
+            overflow: hidden;
+            border-radius: 24px 24px 0 0;
+            cursor: pointer;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .edit-card:hover .video-container video {
+            transform: scale(1.04);
+        }
+
+        .video-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 40%, rgba(20,10,5,0.75) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 16px;
+            pointer-events: none;
+        }
+
+        .story-pill {
+            align-self: flex-start;
+            background: linear-gradient(135deg, rgba(255, 158, 0, 0.95), rgba(255, 84, 0, 0.95));
+            backdrop-filter: blur(8px);
+            color: #ffffff;
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 14px;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .play-action-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff6b35;
+            font-size: 1.6rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            pointer-events: auto;
+        }
+
+        .edit-card:hover .play-action-btn {
+            transform: translate(-50%, -50%) scale(1.16);
+            background: linear-gradient(135deg, #ff9e00, #ff5400);
+            color: #ffffff;
+        }
+
+        .card-details {
+            padding: 20px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex-grow: 1;
+        }
+
+        .card-edit-title {
+            font-family: 'Fraunces', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #3b1908;
+        }
+
+        .card-edit-note {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .card-bottom-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255, 158, 0, 0.15);
+        }
+
+        .open-cinema-btn {
+            background: none;
+            border: none;
+            color: #d9480f;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: background 0.2s;
+        }
+
+        .open-cinema-btn:hover {
+            background: rgba(255, 158, 0, 0.12);
+        }
+
+        .heart-count-btn {
+            background: none;
+            border: none;
+            color: #997463;
+            font-size: 0.88rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .heart-count-btn.liked {
+            color: #e63946;
+            font-weight: 700;
+        }
+
+        /* CINEMATIC FULLSCREEN REELS / STORY MODAL */
+        .story-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 8, 4, 0.96);
+            backdrop-filter: blur(28px);
+            -webkit-backdrop-filter: blur(28px);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.35s ease;
+        }
+
+        .story-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .story-player-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 440px;
+            height: 100vh;
+            max-height: 880px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+        }
+
+        .story-frame {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            max-height: 800px;
+            background: #000;
+            border-radius: 26px;
+            overflow: hidden;
+            box-shadow: 0 25px 65px rgba(0,0,0,0.85), 0 0 50px rgba(255, 158, 0, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .story-video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: #000;
+        }
+
+        /* Top Progress Bars */
+        .story-bars {
+            position: absolute;
+            top: 12px;
+            left: 14px;
+            right: 14px;
+            display: flex;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .story-bar-item {
+            flex: 1;
+            height: 3.5px;
+            background: rgba(255, 255, 255, 0.35);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .story-bar-fill {
+            height: 100%;
+            width: 0%;
+            background: #ffbe0b;
+            border-radius: 4px;
+            transition: width 0.1s linear;
+        }
+
+        .story-header-overlay {
+            position: absolute;
+            top: 24px;
+            left: 14px;
+            right: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 10;
+            color: #ffffff;
+        }
+
+        .story-user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(12px);
+            padding: 6px 14px;
+            border-radius: 30px;
+        }
+
+        .story-avatar {
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, #ff9e00, #ff5400);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.95rem;
+        }
+
+        .story-caption-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 14px;
+            right: 14px;
+            background: linear-gradient(0deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.45) 70%, transparent 100%);
+            padding: 32px 18px 16px 18px;
+            border-radius: 0 0 22px 22px;
+            color: #ffffff;
+            z-index: 10;
+        }
+
+        .story-caption-title {
+            font-family: 'Fraunces', serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #ffd166;
+        }
+
+        .story-caption-text {
+            font-size: 0.96rem;
+            line-height: 1.45;
+            color: #f8edeb;
+        }
+
+        .story-modal-controls {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .icon-btn {
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(10px);
+            border: none;
+            color: #ffffff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.15rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .icon-btn:hover {
+            transform: scale(1.12);
+            background: rgba(255, 158, 0, 0.8);
+        }
+
+        .story-nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.22);
+            backdrop-filter: blur(12px);
+            border: none;
+            color: #ffffff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            cursor: pointer;
+            z-index: 20;
+            transition: all 0.2s;
+        }
+
+        .story-nav-prev {
+            left: max(16px, calc(50% - 290px));
+        }
+
+        .story-nav-next {
+            right: max(16px, calc(50% - 290px));
+        }
+
+        .story-nav-btn:hover {
+            background: var(--sun-amber);
+            transform: translateY(-50%) scale(1.12);
+        }
+
+        /* SECTION: Interactive Morning Notes & Hugs */
+        .interactive-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 22px;
+        }
+
+        .feature-box {
+            background: var(--glass-bg);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1.5px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 30px 24px;
+            text-align: center;
+            box-shadow: 0 14px 40px var(--glass-shadow);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .feature-icon {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+            display: inline-block;
+            animation: warmPulse 2.4s infinite ease-in-out;
+        }
+
+        .feature-title {
+            font-family: 'Fraunces', serif;
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: #3b1908;
+            margin-bottom: 8px;
+        }
+
+        .feature-desc {
+            font-size: 0.96rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+            margin-bottom: 18px;
+        }
+
+        .generator-result {
+            min-height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Fraunces', serif;
+            font-style: italic;
+            font-size: 1.08rem;
+            color: #a71d2a;
+            background: rgba(255, 158, 0, 0.1);
+            border-radius: 16px;
+            padding: 14px;
+            margin-bottom: 18px;
+            border: 1.5px dashed rgba(255, 158, 0, 0.4);
+            transition: opacity 0.2s ease;
+        }
+
+        .counter-badge {
+            font-size: 1.85rem;
+            font-weight: 700;
+            color: #e63946;
+            margin: 8px 0 18px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* Footer */
+        .footer-note {
+            text-align: center;
+            padding: 32px 16px;
+            color: #7c5843;
+            font-size: 0.98rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-script {
+            font-family: 'Caveat', cursive;
+            font-size: 2.2rem;
+            color: #d9480f;
+            margin-top: 6px;
+            display: block;
+        }
+
+        /* Floating Quick Love Button */
+        .floating-love-pill {
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            background: linear-gradient(135deg, #ff9e00, #ff5400);
+            color: #ffffff;
+            border: none;
+            padding: 13px 22px;
+            border-radius: 35px;
+            font-weight: 700;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.96rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 12px 35px rgba(255, 107, 53, 0.55);
+            z-index: 99;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .floating-love-pill:hover, .floating-love-pill:active {
+            transform: scale(1.08);
+        }
+
+        /* Animations */
+        @keyframes fadeInSlide {
+            from {
+                opacity: 0;
+                transform: translateY(35px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes popIn {
+            0% { opacity: 0; transform: scale(0.92); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes warmPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.12); }
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 12px 100px 12px;
+                gap: 22px;
+            }
+
+            .hero-card {
+                padding: 34px 18px;
+                border-radius: 22px;
+            }
+
+            .hero-title {
+                font-size: 2.35rem;
+            }
+
+            .hero-script {
+                font-size: 2rem;
+            }
+
+            .love-letter-box {
+                padding: 22px 18px;
+            }
+
+            .love-letter-box p {
+                font-size: 1.04rem;
+            }
+
+            .highlight-quote {
+                font-size: 1.15rem;
+            }
+
+            .edits-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .story-nav-btn {
+                display: none;
+            }
+
+            .story-player-wrapper {
+                padding: 0;
+                max-height: 100vh;
+            }
+
+            .story-frame {
+                border-radius: 0;
+                max-height: 100vh;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="card">
-<h1>Good Morning Babeee❤️</h1>
+    <!-- Morning Sun & Radiant Background -->
+    <div class="sunshine-bg">
+        <div class="sun-radiance"></div>
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
 
-<p>
-I hope this is the first thing that makes you smile today.
-You are the most beautiful thing that has ever happened in my life and the only person I see my future with.
-I really want to grow with you, I know I am not like the person I want to be for you but I'll beacome a better person for you and love you till my last breath. <br><br>
-I WANT YOU TO OUTLIVE ME. <br><br>
-I hope today brings you as much happiness as you bring me.
-</p>
+    <!-- Particle Canvas for Sunbeams, Sparkles & Glowing Hearts -->
+    <canvas id="particle-canvas"></canvas>
 
-<button onclick="showMessage()">
-Click for a Surprise ✨
-</button>
+    <div class="container">
 
-<div id="secret">
-My love for you will grow more every single day and I'll be always there for you . ❤️<br><br>
-Thankyou for being there in my life and always choosing me. <br><br>
-I LOOOVE YOUUUU BABEEEE. ❤️<br><br>
-</div>
+        <!-- Top Header Navigation Bar -->
+        <header class="top-bar">
+            <div class="brand-badge">
+                <span>☀️</span> Good Morning My Sunshine
+            </div>
+            <button class="music-toggle-btn" id="musicBtn" onclick="toggleAmbientMusic()" title="Play gentle romantic melody">
+                <span id="musicIcon">🎵</span> <span id="musicText">Morning Melody</span>
+            </button>
+        </header>
 
-</div>
+        <!-- Main Hero Card: Morning Greeting & Letter -->
+        <main class="hero-card">
+            <div class="morning-badge">
+                <span>🌅</span> Waking Up Grateful For You
+            </div>
 
-<script>
-function showMessage(){
-    document.getElementById("secret").style.display="block";
-}
+            <h1 class="hero-title">Good Morning Babeee</h1>
+            <span class="hero-script">You are my whole world & sunshine ☀️❤️</span>
 
-function createHeart(){
-    const heart=document.createElement("div");
-    heart.className="heart";
-    heart.innerHTML="❤";
-    heart.style.left=Math.random()*100+"vw";
-    heart.style.fontSize=(20+Math.random()*25)+"px";
-    document.body.appendChild(heart);
+            <div class="hero-divider">
+                <span>❦ ☀️ ❦</span>
+            </div>
 
-    setTimeout(()=>heart.remove(),8000);
-}
+            <div class="love-letter-box">
+                <p>
+                    I hope this is the first thing that makes you smile today.
+                    You are the most beautiful thing that has ever happened in my life and the only person I see my future with.
+                </p>
 
-setInterval(createHeart,300);
-</script>
+                <span class="highlight-quote">
+                    "I WANT YOU TO OUTLIVE ME."
+                </span>
+
+                <p>
+                    I really want to grow with you. I know I am not always the perfect person I want to be for you, but I will become a better person for you every single day and love you till my last breath.<br><br>
+                    I hope today brings you as much boundless happiness, warmth, and sunshine as you bring to my soul every day.
+                </p>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-sunshine" onclick="revealSecret(event)">
+                    <span>✨</span> Click for a Special Surprise
+                </button>
+                <button class="btn-secondary-morning" onclick="scrollToEdits()">
+                    <span>🎬</span> Watch Our Edits
+                </button>
+            </div>
+
+            <!-- Surprise Reveal Area -->
+            <div id="secret-card" class="secret-reveal-card">
+                <div style="font-size: 2.4rem; margin-bottom: 10px;">💌 🌹 💍 ☀️</div>
+                <div class="secret-text">
+                    My love for you will grow more with every single sunrise and heartbeat, and I promise I will always be right there beside you. ❤️<br><br>
+                    Thank you for being there in my life and for always choosing me.
+                </div>
+                <span class="secret-grand">I LOOOVE YOUUUU BABEEEE! ❤️</span>
+            </div>
+        </main>
+
+        <!-- SECTION: Video Edits Showcase -->
+        <section class="edits-section" id="edits-section">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>🎬</span> Made with All My Love For You
+                </div>
+                <h2 class="section-title">Our Special Moments & Edits</h2>
+                <p class="section-subtitle">I put together these edits just for you. Tap any video to watch in full-screen cinematic story mode! ✨</p>
+            </div>
+
+            <!-- Edits Grid -->
+            <div class="edits-grid" id="editsGrid">
+                <!-- Edit 1 -->
+                <div class="edit-card" onclick="openStory(0)">
+                    <div class="video-container">
+                        <video src="edit 1.mp4" muted loop playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <div class="story-pill"><span>🌟</span> Edit #1</div>
+                            <button class="play-action-btn" title="Play Reel">▶</button>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <h3 class="card-edit-title">The Smile That Lights My World</h3>
+                        <p class="card-edit-note">Every time you smile, my entire world glows with pure happiness.</p>
+                        <div class="card-bottom-bar">
+                            <button class="open-cinema-btn"><span>▶</span> Watch Reel</button>
+                            <button class="heart-count-btn" onclick="likeEdit(event, 0)"><span>❤️</span> <span id="like-0">48</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit 2 -->
+                <div class="edit-card" onclick="openStory(1)">
+                    <div class="video-container">
+                        <video src="edit 2.mp4" muted loop playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <div class="story-pill"><span>💕</span> Edit #2</div>
+                            <button class="play-action-btn" title="Play Reel">▶</button>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <h3 class="card-edit-title">Endless Butterflies</h3>
+                        <p class="card-edit-note">You still give me those same magical butterflies from the very first day.</p>
+                        <div class="card-bottom-bar">
+                            <button class="open-cinema-btn"><span>▶</span> Watch Reel</button>
+                            <button class="heart-count-btn" onclick="likeEdit(event, 1)"><span>❤️</span> <span id="like-1">52</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit 3 -->
+                <div class="edit-card" onclick="openStory(2)">
+                    <div class="video-container">
+                        <video src="edit 3.mp4" muted loop playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <div class="story-pill"><span>✨</span> Edit #3</div>
+                            <button class="play-action-btn" title="Play Reel">▶</button>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <h3 class="card-edit-title">Our Little Universe</h3>
+                        <p class="card-edit-note">With you, even the simplest little moment becomes an unforgettable memory.</p>
+                        <div class="card-bottom-bar">
+                            <button class="open-cinema-btn"><span>▶</span> Watch Reel</button>
+                            <button class="heart-count-btn" onclick="likeEdit(event, 2)"><span>❤️</span> <span id="like-2">61</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit 4 -->
+                <div class="edit-card" onclick="openStory(3)">
+                    <div class="video-container">
+                        <video src="edit 4.mp4" muted loop playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <div class="story-pill"><span>🌸</span> Edit #4</div>
+                            <button class="play-action-btn" title="Play Reel">▶</button>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <h3 class="card-edit-title">My Safe Haven</h3>
+                        <p class="card-edit-note">In your arms and your eyes, I found the home I always prayed for.</p>
+                        <div class="card-bottom-bar">
+                            <button class="open-cinema-btn"><span>▶</span> Watch Reel</button>
+                            <button class="heart-count-btn" onclick="likeEdit(event, 3)"><span>❤️</span> <span id="like-3">44</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit 5 -->
+                <div class="edit-card" onclick="openStory(4)">
+                    <div class="video-container">
+                        <video src="edit 5.mp4" muted loop playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <div class="story-pill"><span>💖</span> Edit #5</div>
+                            <button class="play-action-btn" title="Play Reel">▶</button>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <h3 class="card-edit-title">The Prettiest Girl Ever</h3>
+                        <p class="card-edit-note">The most stunning girl in the whole wide universe, inside and out.</p>
+                        <div class="card-bottom-bar">
+                            <button class="open-cinema-btn"><span>▶</span> Watch Reel</button>
+                            <button class="heart-count-btn" onclick="likeEdit(event, 4)"><span>❤️</span> <span id="like-4">73</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit 6 -->
+                <div class="edit-card" onclick="openStory(5)">
+                    <div class="video-container">
+                        <video src="edit 6.mp4" muted loop playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <div class="story-pill"><span>💍</span> Edit #6</div>
+                            <button class="play-action-btn" title="Play Reel">▶</button>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <h3 class="card-edit-title">Forever & Always</h3>
+                        <p class="card-edit-note">Loving you today, tomorrow, and every single second till my last breath.</p>
+                        <div class="card-bottom-bar">
+                            <button class="open-cinema-btn"><span>▶</span> Watch Reel</button>
+                            <button class="heart-count-btn" onclick="likeEdit(event, 5)"><span>❤️</span> <span id="like-5">89</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: Interactive Sunshine Love Notes & Hugs -->
+        <section class="interactive-section">
+            <!-- Love Reasons Capsule -->
+            <div class="feature-box">
+                <div>
+                    <span class="feature-icon">💌</span>
+                    <h3 class="feature-title">Why I Adore You</h3>
+                    <p class="feature-desc">Tap below whenever you want a sweet reminder of why you mean the entire world to me.</p>
+                    <div class="generator-result" id="loveQuoteDisplay">
+                        "Your smile is my favorite sunrise in the morning."
+                    </div>
+                </div>
+                <button class="btn-sunshine" style="width: 100%; justify-content: center;" onclick="generateLoveNote(event)">
+                    <span>💖</span> Next Love Reminder
+                </button>
+            </div>
+
+            <!-- Virtual Hugs & Kisses Counter -->
+            <div class="feature-box">
+                <div>
+                    <span class="feature-icon">💋</span>
+                    <h3 class="feature-title">Virtual Hugs & Kisses</h3>
+                    <p class="feature-desc">Sending morning kisses and tight warm hugs straight to your heart.</p>
+                    <div class="counter-badge">
+                        <span id="kissCount">120</span> <span>Kisses Sent 💕</span>
+                    </div>
+                </div>
+                <button class="btn-sunshine" style="width: 100%; justify-content: center;" onclick="sendKiss(event)">
+                    <span>😘</span> Send Kisses & Hugs Back
+                </button>
+            </div>
+        </section>
+
+        <!-- Footer Note -->
+        <footer class="footer-note">
+            <p>Made with all my heart, purely for you.</p>
+            <span class="footer-script">Have a bright, beautiful, and blessed morning, my sunshine ☀️❤️</span>
+        </footer>
+
+    </div>
+
+    <!-- Floating Love Button for Mobile -->
+    <button class="floating-love-pill" onclick="burstLove(event)">
+        <span>☀️</span> Send Love
+    </button>
+
+    <!-- CINEMATIC FULLSCREEN STORY/REEL MODAL -->
+    <div class="story-modal" id="storyModal" onclick="handleModalBackdropClick(event)">
+        <!-- Prev button (desktop) -->
+        <button class="story-nav-btn story-nav-prev" onclick="prevStory(event)">❮</button>
+
+        <div class="story-player-wrapper" id="storyWrapper">
+            <div class="story-frame">
+                <!-- Story Progress Bars -->
+                <div class="story-bars" id="storyBars">
+                    <div class="story-bar-item"><div class="story-bar-fill" id="bar-0"></div></div>
+                    <div class="story-bar-item"><div class="story-bar-fill" id="bar-1"></div></div>
+                    <div class="story-bar-item"><div class="story-bar-fill" id="bar-2"></div></div>
+                    <div class="story-bar-item"><div class="story-bar-fill" id="bar-3"></div></div>
+                    <div class="story-bar-item"><div class="story-bar-fill" id="bar-4"></div></div>
+                    <div class="story-bar-item"><div class="story-bar-fill" id="bar-5"></div></div>
+                </div>
+
+                <!-- Story Header -->
+                <div class="story-header-overlay">
+                    <div class="story-user-info">
+                        <div class="story-avatar">☀️</div>
+                        <span style="font-size: 0.92rem; font-weight: 600;" id="storyReelNumber">Our Memory #1</span>
+                    </div>
+                    <div class="story-modal-controls">
+                        <button class="icon-btn" id="modalSoundBtn" onclick="toggleModalSound(event)" title="Mute/Unmute">🔊</button>
+                        <button class="icon-btn" onclick="closeStory(event)" title="Close">✕</button>
+                    </div>
+                </div>
+
+                <!-- Video Player -->
+                <video class="story-video" id="modalVideo" playsinline preload="auto" onclick="toggleVideoPlay(event)"></video>
+
+                <!-- Bottom Caption -->
+                <div class="story-caption-overlay">
+                    <div class="story-caption-title" id="storyModalTitle">The Smile That Lights My World</div>
+                    <div class="story-caption-text" id="storyModalText">Every time you smile, my entire world glows with pure happiness.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next button (desktop) -->
+        <button class="story-nav-btn story-nav-next" onclick="nextStory(event)">❯</button>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Video Edits Data
+        const editsData = [
+            {
+                src: 'edit 1.mp4',
+                title: 'The Smile That Lights My World',
+                text: 'Every time you smile, my entire world glows with pure happiness. You are my sunshine.'
+            },
+            {
+                src: 'edit 2.mp4',
+                title: 'Endless Butterflies',
+                text: 'You still give me those same magical butterflies from the very first day we talked.'
+            },
+            {
+                src: 'edit 3.mp4',
+                title: 'Our Little Universe',
+                text: 'With you, even the simplest little moment becomes an unforgettable memory I cherish forever.'
+            },
+            {
+                src: 'edit 4.mp4',
+                title: 'My Safe Haven',
+                text: 'In your warmth and in your eyes, I found the home and peace I always prayed for.'
+            },
+            {
+                src: 'edit 5.mp4',
+                title: 'The Prettiest Girl Ever',
+                text: 'The most stunning and lovely girl in the whole wide universe, inside and out.'
+            },
+            {
+                src: 'edit 6.mp4',
+                title: 'Forever & Always',
+                text: 'Loving you today, tomorrow, and every single second till my last breath. I want you to outlive me.'
+            }
+        ];
+
+        let currentStoryIndex = 0;
+        let isVideoPlaying = false;
+        let isModalMuted = false;
+
+        // Uplifting Sunshine & Love Quotes
+        const romanticQuotes = [
+            "“You are the sunshine that brightens up my darkest days.”",
+            "“Your smile is my favorite sunrise in the morning.”",
+            "“No matter how far or close, my heart beats only for you.”",
+            "“Thank you for being my peace, my happiest thought, and my warm home.”",
+            "“Every single morning I wake up grateful that I get to love you.”",
+            "“You make ordinary days feel like a warm, golden fairytale.”",
+            "“I see my entire future, my dreams, and my whole life in you.”",
+            "“I love you more than words, actions, or anything in this universe could ever show.”"
+        ];
+
+        // 1. Particle Canvas (Sunbeams, Golden Sparkles, Floating Hearts)
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+
+        let particles = [];
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', () => {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        });
+
+        class Particle {
+            constructor(x, y, isBurst = false) {
+                this.x = x !== undefined ? x : Math.random() * width;
+                this.y = y !== undefined ? y : height + 20;
+                this.isBurst = isBurst;
+
+                if (isBurst) {
+                    const angle = Math.random() * Math.PI * 2;
+                    const speed = 2.5 + Math.random() * 6.5;
+                    this.vx = Math.cos(angle) * speed;
+                    this.vy = Math.sin(angle) * speed - 2.5;
+                    this.gravity = 0.09;
+                    this.size = 14 + Math.random() * 18;
+                    this.alpha = 1;
+                    this.decay = 0.015 + Math.random() * 0.02;
+                } else {
+                    this.vx = (Math.random() - 0.5) * 1.2;
+                    this.vy = -(0.9 + Math.random() * 1.8);
+                    this.size = 10 + Math.random() * 18;
+                    this.alpha = 0.45 + Math.random() * 0.45;
+                    this.decay = 0;
+                    this.wobble = Math.random() * Math.PI * 2;
+                    this.wobbleSpeed = 0.03 + Math.random() * 0.04;
+                }
+
+                const symbols = ['☀️', '✨', '💛', '💖', '🌸', '🌻', '🧡', '❤️'];
+                this.symbol = symbols[Math.floor(Math.random() * symbols.length)];
+            }
+
+            update() {
+                if (this.isBurst) {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    this.vy += this.gravity;
+                    this.alpha -= this.decay;
+                } else {
+                    this.wobble += this.wobbleSpeed;
+                    this.x += this.vx + Math.sin(this.wobble) * 0.85;
+                    this.y += this.vy;
+                    if (this.y < -30) {
+                        this.y = height + 20;
+                        this.x = Math.random() * width;
+                    }
+                }
+            }
+
+            draw() {
+                ctx.save();
+                ctx.globalAlpha = Math.max(0, this.alpha);
+                ctx.font = `${this.size}px serif`;
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(this.symbol, this.x, this.y);
+                ctx.restore();
+            }
+        }
+
+        // Populate initial floating particles
+        for (let i = 0; i < 26; i++) {
+            particles.push(new Particle(Math.random() * width, Math.random() * height));
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, width, height);
+
+            for (let i = particles.length - 1; i >= 0; i--) {
+                const p = particles[i];
+                p.update();
+                p.draw();
+
+                if (p.isBurst && p.alpha <= 0) {
+                    particles.splice(i, 1);
+                }
+            }
+
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        // Click anywhere to burst golden sunbeams & hearts
+        window.addEventListener('click', (e) => {
+            if (e.target.closest('#storyModal') || e.target.closest('video') || e.target.closest('button')) return;
+            burstHeartsAt(e.clientX, e.clientY, 12);
+        });
+
+        function burstHeartsAt(x, y, count = 16) {
+            for (let i = 0; i < count; i++) {
+                particles.push(new Particle(x, y, true));
+            }
+        }
+
+        // 2. Secret Reveal
+        function revealSecret(e) {
+            const card = document.getElementById('secret-card');
+            card.style.display = 'block';
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            if (e) {
+                burstHeartsAt(e.clientX || window.innerWidth / 2, e.clientY || window.innerHeight / 2, 28);
+            }
+        }
+
+        function scrollToEdits() {
+            document.getElementById('edits-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 3. Cinematic Story / Reels Viewer Logic
+        const modal = document.getElementById('storyModal');
+        const modalVideo = document.getElementById('modalVideo');
+        const modalTitle = document.getElementById('storyModalTitle');
+        const modalText = document.getElementById('storyModalText');
+        const reelNumber = document.getElementById('storyReelNumber');
+        const soundBtn = document.getElementById('modalSoundBtn');
+
+        function openStory(index) {
+            currentStoryIndex = index;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            loadStoryVideo(currentStoryIndex);
+        }
+
+        function loadStoryVideo(index) {
+            const data = editsData[index];
+            modalVideo.src = data.src;
+            modalTitle.textContent = data.title;
+            modalText.textContent = data.text;
+            reelNumber.textContent = `Memory #${index + 1} of ${editsData.length}`;
+
+            modalVideo.muted = isModalMuted;
+            modalVideo.currentTime = 0;
+
+            // Reset progress bars
+            for (let i = 0; i < editsData.length; i++) {
+                const bar = document.getElementById(`bar-${i}`);
+                if (i < index) {
+                    bar.style.width = '100%';
+                } else {
+                    bar.style.width = '0%';
+                }
+            }
+
+            const playPromise = modalVideo.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    isVideoPlaying = true;
+                }).catch(err => {
+                    modalVideo.muted = true;
+                    isModalMuted = true;
+                    soundBtn.textContent = '🔇';
+                    modalVideo.play();
+                    isVideoPlaying = true;
+                });
+            }
+        }
+
+        modalVideo.addEventListener('timeupdate', () => {
+            if (modalVideo.duration) {
+                const percent = (modalVideo.currentTime / modalVideo.duration) * 100;
+                const currentBar = document.getElementById(`bar-${currentStoryIndex}`);
+                if (currentBar) {
+                    currentBar.style.width = percent + '%';
+                }
+            }
+        });
+
+        modalVideo.addEventListener('ended', () => {
+            if (currentStoryIndex < editsData.length - 1) {
+                nextStory();
+            } else {
+                document.getElementById(`bar-${currentStoryIndex}`).style.width = '100%';
+            }
+        });
+
+        function toggleVideoPlay(e) {
+            if (e) e.stopPropagation();
+            if (modalVideo.paused) {
+                modalVideo.play();
+                isVideoPlaying = true;
+            } else {
+                modalVideo.pause();
+                isVideoPlaying = false;
+            }
+        }
+
+        function toggleModalSound(e) {
+            if (e) e.stopPropagation();
+            isModalMuted = !isModalMuted;
+            modalVideo.muted = isModalMuted;
+            soundBtn.textContent = isModalMuted ? '🔇' : '🔊';
+        }
+
+        function nextStory(e) {
+            if (e) e.stopPropagation();
+            if (currentStoryIndex < editsData.length - 1) {
+                currentStoryIndex++;
+                loadStoryVideo(currentStoryIndex);
+            } else {
+                currentStoryIndex = 0;
+                loadStoryVideo(currentStoryIndex);
+            }
+        }
+
+        function prevStory(e) {
+            if (e) e.stopPropagation();
+            if (currentStoryIndex > 0) {
+                currentStoryIndex--;
+                loadStoryVideo(currentStoryIndex);
+            }
+        }
+
+        function closeStory(e) {
+            if (e) e.stopPropagation();
+            modal.classList.remove('active');
+            modalVideo.pause();
+            document.body.style.overflow = '';
+        }
+
+        function handleModalBackdropClick(e) {
+            if (e.target === modal || e.target === document.getElementById('storyWrapper')) {
+                closeStory();
+            }
+        }
+
+        // Mobile swipe gestures
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        modal.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+            touchStartY = e.changedTouches[0].screenY;
+        }, { passive: true });
+
+        modal.addEventListener('touchend', (e) => {
+            const diffX = e.changedTouches[0].screenX - touchStartX;
+            const diffY = e.changedTouches[0].screenY - touchStartY;
+
+            if (Math.abs(diffX) > 50 && Math.abs(diffX) > Math.abs(diffY)) {
+                if (diffX < 0) {
+                    nextStory();
+                } else {
+                    prevStory();
+                }
+            } else if (diffY > 80) {
+                closeStory();
+            }
+        }, { passive: true });
+
+        // 4. Like button interaction
+        function likeEdit(e, index) {
+            e.stopPropagation();
+            const likeEl = document.getElementById(`like-${index}`);
+            const btn = e.currentTarget;
+            let count = parseInt(likeEl.textContent);
+
+            if (!btn.classList.contains('liked')) {
+                btn.classList.add('liked');
+                likeEl.textContent = count + 1;
+                burstHeartsAt(e.clientX, e.clientY, 15);
+            } else {
+                btn.classList.remove('liked');
+                likeEl.textContent = count - 1;
+            }
+        }
+
+        // 5. Love Quotes Generator
+        let quoteIdx = 0;
+        function generateLoveNote(e) {
+            quoteIdx = (quoteIdx + 1) % romanticQuotes.length;
+            const display = document.getElementById('loveQuoteDisplay');
+            display.style.opacity = '0';
+            setTimeout(() => {
+                display.textContent = romanticQuotes[quoteIdx];
+                display.style.opacity = '1';
+            }, 200);
+            burstHeartsAt(e.clientX || window.innerWidth / 2, e.clientY || window.innerHeight / 2, 12);
+        }
+
+        // 6. Virtual Hugs & Kisses Counter
+        let kissCounter = 120;
+        function sendKiss(e) {
+            kissCounter += 5;
+            document.getElementById('kissCount').textContent = kissCounter;
+            burstHeartsAt(e.clientX || window.innerWidth / 2, e.clientY || window.innerHeight / 2, 22);
+        }
+
+        function burstLove(e) {
+            burstHeartsAt(e.clientX || window.innerWidth - 60, e.clientY || window.innerHeight - 60, 26);
+            sendKiss(e);
+        }
+
+        // 7. Warm Morning Acoustic Chords (Web Audio API)
+        let audioCtx = null;
+        let isMusicPlaying = false;
+        let melodyInterval = null;
+
+        const chordNotes = [
+            // D major sunrise progression: Dmaj9, F#m7, Gmaj7, Asus4
+            [293.66, 369.99, 440.00, 554.37, 659.25], // D, F#, A, C#, E
+            [185.00, 277.18, 369.99, 440.00, 554.37], // F#, C#, F#, A, C#
+            [196.00, 293.66, 369.99, 440.00, 587.33], // G, D, F#, A, D
+            [220.00, 293.66, 369.99, 440.00, 587.33]  // A, D, F#, A, D
+        ];
+
+        function playRomanticTone(freq, time, duration = 2.6) {
+            if (!audioCtx) return;
+
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(freq, time);
+
+            gain.gain.setValueAtTime(0, time);
+            gain.gain.linearRampToValueAtTime(0.048, time + 0.25);
+            gain.gain.exponentialRampToValueAtTime(0.0001, time + duration);
+
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            osc.start(time);
+            osc.stop(time + duration);
+        }
+
+        function playChordProgression() {
+            if (!audioCtx || !isMusicPlaying) return;
+
+            let currentChord = 0;
+
+            function step() {
+                if (!isMusicPlaying) return;
+
+                const now = audioCtx.currentTime;
+                const chord = chordNotes[currentChord];
+
+                chord.forEach((freq, idx) => {
+                    playRomanticTone(freq, now + idx * 0.42, 3.6);
+                });
+
+                currentChord = (currentChord + 1) % chordNotes.length;
+                melodyInterval = setTimeout(step, 3100);
+            }
+
+            step();
+        }
+
+        function toggleAmbientMusic() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+
+            const musicBtn = document.getElementById('musicBtn');
+            const musicIcon = document.getElementById('musicIcon');
+            const musicText = document.getElementById('musicText');
+
+            if (!isMusicPlaying) {
+                isMusicPlaying = true;
+                musicIcon.textContent = '⏸';
+                musicText.textContent = 'Playing Melody';
+                musicBtn.style.background = 'linear-gradient(135deg, #ff5400, #b33939)';
+                playChordProgression();
+            } else {
+                isMusicPlaying = false;
+                clearTimeout(melodyInterval);
+                musicIcon.textContent = '🎵';
+                musicText.textContent = 'Morning Melody';
+                musicBtn.style.background = 'linear-gradient(135deg, #ff9e00, #ff6b35)';
+            }
+        }
+
+        // Keyboard shortcuts
+        window.addEventListener('keydown', (e) => {
+            if (!modal.classList.contains('active')) return;
+            if (e.key === 'Escape') closeStory();
+            if (e.key === 'ArrowRight') nextStory();
+            if (e.key === 'ArrowLeft') prevStory();
+            if (e.key === ' ') {
+                e.preventDefault();
+                toggleVideoPlay();
+            }
+        });
+    </script>
 
 </body>
 </html>
